@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testito",
+  "info": {
+    "name": "Testito",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "sobrenome": {
+      "type": "string"
+    }
+  }
+}
