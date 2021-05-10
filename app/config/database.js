@@ -12,11 +12,10 @@ module.exports = ({ env }) => ({
         password: env('DATABASE_PASSWORD', 'strapi'),
         schema: env('DATABASE_SCHEMA', 'public'), // Not Required
         ssl: {
-          rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
+          rejectUnauthorized: false,
         },
       },
       options: {
-        ssl: env.bool('DATABASE_SSL', false),
       },
     },
   },
